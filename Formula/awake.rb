@@ -18,9 +18,9 @@ class Awake < Formula
     run [opt_bin/"awake-night"]
     run_type :cron
     cron "0 3 * * *"
-    environment_variables FORCE_SLEEP:  "0",
-                          AWAKE_LOG:    "#{var}/log/awake.log",
-                          PATH:         "/usr/bin:/bin:/usr/sbin:/sbin"
+    environment_variables FORCE_SLEEP: "0",
+                          AWAKE_LOG: "#{var}/log/awake.log",
+                          PATH: "/usr/bin:/bin:/usr/sbin:/sbin"
     log_path "#{var}/log/awake.log"
     error_log_path "#{var}/log/awake.log"
   end
